@@ -1,0 +1,13 @@
+
+.screen-title {
+    font-size: 32px;
+    margin: 40px 0 40px 0;
+}
+.question-title {
+    /* margin: 5% 0 5% 0; */
+    height: 40vh;
+    background-image: url("/assets/images/bg_above.jpg");
+    background-position: center;
+    background-size: cover,contain;
+    margin-bottom: 24px;
+}

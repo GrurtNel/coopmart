@@ -1,0 +1,12 @@
+.answer-item{
+    padding-top: 16%;
+    background: url('/assets/images/icon1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+:host{
+    display: block;
+    width: 16%;    
+    float: left;
+}

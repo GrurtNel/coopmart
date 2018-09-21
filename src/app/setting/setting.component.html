@@ -1,0 +1,17 @@
+
+<form action="" method="POST" role="form" style="width: 40%;" [formGroup]="settingForm">
+  <legend>Setting</legend>
+  <div class="form-group">
+    <label for="">Store Code </label>
+    <input type="text" class="form-control" id="" placeholder="enter store code" formControlName="branch_code" >
+  </div>
+  <div class="form-group">
+    <label for="">Feedback Code</label>
+    <input type="text" class="form-control" id="" placeholder="enter feedback code" formControlName="feedback_code">
+  </div>
+  <div class="form-group">
+    <label for="">Counter Code</label>
+    <input type="text" class="form-control" id="" placeholder="enter counter code" formControlName="counter_code">
+  </div>
+  <button type="button" (click)="onJoin()" class="btn btn-primary">Join </button>
+</form>

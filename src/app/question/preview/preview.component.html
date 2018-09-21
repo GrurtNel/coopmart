@@ -1,0 +1,8 @@
+<section>
+  <app-title [title]="showingQuestion"></app-title>
+  <app-single-question *ngIf="showingQuestion.type==='single'" [question]="showingQuestion" mode="preview" [(i18n)]="currentLanguage"></app-single-question>
+  <app-multiple-question *ngIf="showingQuestion.type==='multiple'" [question]="showingQuestion" mode="preview" [(i18n)]="currentLanguage"></app-multiple-question>
+  <app-answer-question *ngIf="showingQuestion.type==='answer'" [question]="showingQuestion" mode="preview" [(i18n)]="currentLanguage"></app-answer-question>
+  <app-goodbye *ngIf="showingQuestion.type==='tks'" class="bounceInLeft animated"></app-goodbye>
+  <!-- <app-advertisement *ngIf="!showingQuestion.type"></app-advertisement> -->
+</section>

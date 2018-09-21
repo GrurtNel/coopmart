@@ -1,0 +1,21 @@
+<div class="uk-grid question-container" [ngClass]="animated" #animate>
+    <div class="uk-flex uk-flex-center uk-flex-space-between" style="width: 100%;margin-top:4%; ">
+        <div class="answer-item" *ngFor="let a of question.answers;let i = index" (mousedown)="onSelect(a, i)"
+            [ngClass]="selectAnswer == i?'clicked-button':''">
+            <img [src]="a.icon" alt="" />
+            <span class="answer-text" [feedbackTranslator]="a" [language]="i18n"></span>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="single-question bounceInLeft animated">
+    <div class="answer-item" *ngFor="let a of question.answers;let i = index" (click)="onSelect(a, i)" [ngClass]="selectAnswer == i?'clicked-button':''">
+        <img [src]="a.icon" alt="" />
+        <h6 class="answer-text">{{a.content}}</h6>
+    </div>
+</div> -->
+<div class="btncon-wrapper">
+    <button class="btn-continue uk-button uk-button-primary" (mousedown)="onAnswer()" [disabled]="disabled()" [ngStyle]="disabled()?{opacity:0.5}:''">
+        {{i18n==='secondary'?'Continue':'Tiếp tục'}}
+    </button>
+</div>

@@ -1,0 +1,9 @@
+<div class="form-group animated  bounceInLeft answer-wrapper" >
+  <textarea #t [(ngModel)]="answerContent" class="form-control" rows="10" id="comment" 
+  placeholder="{{i18n==='secondary'?'Enter here':'Nhập nội dung trả lời của bạn vào đây'}}" name="answerText" ngModel></textarea>
+</div>
+<div class="btncon-wrapper">
+  <button class="btn-continue" (click)="onAnswer()" [disabled]="disabled()" [ngStyle]="disabled()?{opacity:0.5}:''">
+      {{i18n==='secondary'?'Continue':'Tiếp tục'}}
+  </button>
+</div>  

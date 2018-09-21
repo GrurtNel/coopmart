@@ -1,0 +1,9 @@
+:host() {
+    height: 15vh;
+}
+.footer{
+    padding: 0 30px 30px 30px;
+}
+.footer-text {
+    font-size: 12px;
+}

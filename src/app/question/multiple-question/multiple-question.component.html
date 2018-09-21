@@ -1,0 +1,15 @@
+<!-- <div class="single-question bounceInLeft animated">
+  <div class="answer-item" *ngFor="let a of question.answers" (click)="onSelect(a, i)">
+      <span>{{a.content}}</span>
+  </div>
+</div> -->
+<div [formGroup]="multipleForm" style="padding-right: 40px;padding-left: 40px;" [ngClass]="animated">
+  <div class="question-container uk-flex  uk-flex-wrap uk-flex-middle uk-flex-space-between" formArrayName="answers">
+    <app-multiple-control [(i18n)]="i18n" *ngFor="let a of question.answers;let i = index" [formControlName]="i" [answer]="a"></app-multiple-control>
+  </div>
+</div>
+<div class="btncon-wrapper">
+  <button class="btn-continue uk-button uk-button-primary" (mousedown)="onAnswer()" [disabled]="disabled()" [ngStyle]="disabled()?{opacity:0.5}:''">
+      {{i18n==='secondary'?'Continue':'Tiếp tục'}}
+  </button>
+</div>

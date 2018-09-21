@@ -1,0 +1,21 @@
+.tks{
+    text-align: center;
+    color: #fff;
+}
+
+.tks1{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.tks2{
+    text-align: center;
+    color: #fff;
+}
+:host div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

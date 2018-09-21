@@ -1,0 +1,10 @@
+<div class="question-title title">
+    <div class="txt-question-title">
+        <span class="txt-header line1">
+            {{title.type==='entry'?'WELCOME TO IT CONFERRENCE 2018':''}}
+            {{title.type==='tks'||title.type==='welcome'||title.type==='gift'?title.summary:''}}
+            {{title.type!=='tks' && title.type!=='entry' && title.type!=='welcome'&& title.type!=='gift'?'Khảo sát và phản hồi khách hàng':''}}
+        </span>
+        <span class="txt-header line2">{{title.content }}</span>
+    </div>
+</div>

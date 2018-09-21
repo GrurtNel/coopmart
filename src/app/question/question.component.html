@@ -1,0 +1,13 @@
+<section>
+  <app-title [title]="showingQuestion"></app-title>
+  <!-- <div class="alert alert-danger text-center" role="alert" style="width:100%;z-index: 11;position: absolute; bottom:0;" *ngIf="showAlertNoCampaign">
+      <h3 class="animated flash infinite ">Hiện không có chiến dịch nào được áp dụng</h3>
+  </div> -->
+  <app-single-question *ngIf="showingQuestion.type==='single'" [question]="showingQuestion" [(i18n)]="currentLanguage" (returnFirst)="onStartSurvey($event)"></app-single-question>
+  <app-multiple-question *ngIf="showingQuestion.type==='multiple'" [question]="showingQuestion" [(i18n)]="currentLanguage" (returnFirst)="onStartSurvey($event)"></app-multiple-question>
+  <app-answer-question *ngIf="showingQuestion.type==='answer'" [question]="showingQuestion" [(i18n)]="currentLanguage"></app-answer-question>
+  <app-goodbye *ngIf="showingQuestion.type==='tks'" class="animated bounceInLeft"></app-goodbye>
+  <app-entry-screen  *ngIf="showingQuestion.type==='entry'" (scanQrcode)="onScanQrcode($event)"></app-entry-screen>
+  <app-welcome-screen  *ngIf="showingQuestion.type==='welcome'" [employee]="employee" (continue)="onStartSurvey($event)"></app-welcome-screen>
+  <app-gift  *ngIf="showingQuestion.type==='gift'" [giftCode]="giftCode"></app-gift>
+</section>

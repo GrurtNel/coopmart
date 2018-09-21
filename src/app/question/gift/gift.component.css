@@ -1,0 +1,27 @@
+.txt-gift{
+    color: white;
+}
+.txt-gift-1{
+    font-size: 40px;
+    font-weight: bolder
+}
+.txt-gift-2{
+    font-size: 32px;
+}
+.txt-gift-3{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 144px;
+    color: #ee3175;
+    font-weight: bolder
+}
+
+.txt-gift-4{
+    font-size: 32px;
+    font-weight: bold
+}
+
+.txt-gift-5{
+    font-size: 32px;
+    font-weight: bold
+}

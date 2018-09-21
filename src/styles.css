@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+    *{
+    margin: 0;
+    padding: 0;
+}
+.trunglv-margin{
+    margin:15px;
+}
+.trunglv-margin-top{
+    margin-top:15px;
+}
+.trunglv-margin-bottom{
+    margin-bottom:15px;
+}
+.trunglv-margin-right{
+    margin-right:15px;
+}
+.trunglv-margin-left{
+    margin-left:15px;
+}
+.btn-continue {
+    width:26%;
+    /* height: 2em; */
+    font-size: 32px;
+    font-weight: bold;
+    height: 70px;
+    background: url('assets/images/bg_btncontinue.jpg')
+}
+
+.btn-continue-survey{
+    font-weight: bold; 
+    color: white;
+    width:76%;
+    /* height: 2em; */
+    font-size: 32px;
+    font-weight: bold;
+    height: 70px;
+    border-radius: 45px;
+    background: url('assets/images/bg_btncontinue.jpg')   
+}
+
+.btncon-wrapper {
+    text-align: center;
+    width: 100%;
+}
+.question-container {
+    width: 100%;
+    height: 40vh;
+}
+.txt-answer {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: bold;
+    color: #0075b8
+}
+
+.txt-question-title{
+    padding:18% 0 0 40px
+}
+
+.txt-header {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ee3175;
+}
+.line1{
+    font-size: 32px;
+}
+.line2{
+    font-size: 24px;
+    color: #0075b8;
+}

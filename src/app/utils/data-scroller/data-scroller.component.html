@@ -1,0 +1,11 @@
+<div class="single-question bounceInLeft animated">
+    <div class="control-item" >
+        <img src="assets/images/prev.png" alt="" (click)="onChangePage('prev')" [hidden]="!showPrev()">
+    </div>
+    <div [(ngClass)]="contentStyle" class="ng-content">
+        <ng-content></ng-content>
+    </div>
+    <div class="control-item" >
+        <img src="assets/images/next.png" alt="" (click)="onChangePage('next')" [hidden]="!showNext()">
+    </div>
+</div>

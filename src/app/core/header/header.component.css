@@ -1,0 +1,33 @@
+:host{
+    height: 20vh;
+}
+.header {
+    border-bottom: 1px solid #d3d3d3;
+    /* background: url('/assets/images/header.png');
+    padding: 15px; */
+    /* background-image:url('/assets/images/banner-1.png'); */
+    background-repeat:no-repeat;
+    background-size:contain;
+    /* height: 113px; */
+    background-position:center;
+}
+.header img {
+    width:100%;
+    height: 160px;
+}
+
+.banner-line {
+    text-align: center;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+.banner-line1 {
+    font-size: 24px;
+    
+}
+.banner-line2 {
+    font-size: 28px;
+    
+}

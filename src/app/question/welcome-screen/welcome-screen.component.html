@@ -1,0 +1,17 @@
+<div class="uk-grid question-container" #animate>
+  <div class="uk-flex uk-flex-center uk-flex-space-between animated bounceInLeft" style="width: 100%;margin-top:4%;" *ngIf="employee">
+    <div class="uk-text-center uk-width-1-1">
+      <div class="uk-width-1-1 uk-text-center uk-flex uk-flex-center uk-margin" style="height: 160px;background: url('assets/images/seat_number.png') no-repeat center;background-size: contain">
+        <!-- <img src="assets/images/seat-number.png" style="height: 100%;width: auto" alt=""> -->
+        <h1 class="seat-number">{{employee.seat}}</h1>
+      </div>
+      <div class="uk-width-1-1" style="margin-top: 28px;">
+        <button class="btn-continue-survey">Vui lòng bấm vào khảo sát để có cơ hội nhận quà</button>
+      </div>
+      <button class="btn-continue uk-button uk-button-primary uk-margin" (click)="onContinue()">
+        Tiếp tục
+      </button>
+    </div>
+  </div>
+</div>
+<!-- show welcome screen -->

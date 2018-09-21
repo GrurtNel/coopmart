@@ -1,0 +1,62 @@
+This is the modal
+<div class="uk-modal" id="my-id">
+  <div class="uk-modal-dialog" >
+    <a class="uk-modal-close uk-close" id="btnCloseModal"></a>
+    <img src="assets/images/ic_gift.png" alt="" style="top:-11px;position: fixed;width: 20%;height: auto;left: -11px;">    
+    
+    <div class="uk-form-row">
+      <form class="uk-form uk-form-horizontal" #f="ngForm">
+        <!-- <div class="uk-form-row uk-margin">
+          <h4>{{bonusContent}} </h4>
+        </div> -->
+        <div class="uk-grid uk-margin-small">
+          <div class="uk-width-1-4">
+            <img src="assets/images/ic_mail.png" alt="" >
+          </div>
+          <div class="uk-width-3-4" style=" position: relative;">
+            <div style=" position: absolute;bottom: 0;">
+                <span class="txt-modal-title txt-modal-title1">Chúc mừng bạn đã nhận được vé số may mắn</span>
+                <span class="txt-modal-title txt-modal-title2">Vui lòng để lại thông tin để nhận thưởng</span>
+            </div>
+          </div>
+        </div>
+        <div class="uk-grid uk-margin-small">
+            <div class="uk-width-1-4">
+              <span class="modal-label">Họ và tên</span>
+            </div>
+            <div class="uk-width-3-4">
+                <input type="text" id="form-h-it" class="uk-width-1-1" required name="name" ngModel placeholder="Nhập họ tên">
+            </div>
+          </div>
+        <div class="uk-grid uk-margin-small">
+            <div class="uk-width-1-4">
+              <span class="modal-label">SĐT</span>
+            </div>
+            <div class="uk-width-3-4">
+                <input type="number" id="form-h-it" class="uk-width-1-1" required name="phone" ngModel placeholder="Nhập số điện thoại">
+            </div>
+          </div>
+        <div class="uk-grid uk-margin-small">
+            <div class="uk-width-1-4">
+            </div>
+            <div class="uk-width-3-4">
+                <button class="uk-button uk-button-large uk-button-primary btn-send-info" style="background-image: url('/assets/images/bg_btncontinue.jpg');" (click)="sendLuckyInformation(f)" [disabled]="!f.valid">Gửi thông tin nhận thưởng</button>
+            </div>
+          </div>
+          <div class="uk-grid uk-margin-small"  *ngIf="!f.valid">
+            <div class="uk-width-1-4">
+            </div>
+            <div class="uk-width-3-4">
+                <div class="uk-text-right" style="color: #c6000c">Vui lòng nhập đủ thông tin để nhận thưởng</div>
+            </div>
+          </div>
+      </form>
+
+    </div>
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+    </div>
+  </div>
+</div>
+<button class="uk-button" id="btnActiveModal" data-uk-modal="{target:'#my-id'}" style="display: none;" #btnActiveModal>...</button>

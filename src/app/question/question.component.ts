@@ -139,11 +139,11 @@ export class QuestionComponent implements OnInit {
           this.feedbackSocketService.message$.next(this.result);
           if (resp.lucky_number) {
             this.bonusContent = resp.bonus_content
-            this.showingQuestion = <Question>{ type: 'gift', content: 'Bộ phận: ' + this.employee.dept, summary: 'Kính chào: Mr/Ms. ' + this.employee.name }
+            this.showingQuestion = <Question>{ type: 'gift', content: 'Bộ phận: ' + this.employee.donvi, summary: 'Kính chào: Mr/Ms. ' + this.employee.name }
             this.giftCode = resp.gift_code
             this.sendLuckyInformation()
           } else {
-            const temp = <Question>{ type: 'tks', content: 'Bộ phận: ' + this.employee.dept, summary: 'Kính chào: Mr/Mrs. ' + this.employee.name };
+            const temp = <Question>{ type: 'tks', content: 'Bộ phận: ' + this.employee.donvi, summary: 'Kính chào: Mr/Mrs. ' + this.employee.name };
             this.showingQuestion = temp;
           }
           this.result.refresh();
